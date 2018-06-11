@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UserProfile</title>
+</head>
+<body>
+<form action="/insert/" method="post">
+    {% csrf_token %}
+    Userid:<input type="text" name="uid"><br>
+    Username:<input type="text" name="uname"><br>
+    Password:<input type="password" name="pwd"><br>
+    Email:<input type="text" name="email"><br>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>

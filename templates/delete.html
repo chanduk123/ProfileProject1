@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete</title>
+</head>
+<body>
+<form action="/delete/" method="POST">
+    {% csrf_token %}
+    userid:<input type="text" name="uid"><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

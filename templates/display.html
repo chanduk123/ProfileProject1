@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>userid</th>
+        <th>username</th>
+        <th>password</th>
+        <th>email</th>
+    </tr>
+    {% for data in userprofiles %}
+    <tr>
+        <td>{{ data.userid }}</td>
+        <td>{{ data.username }}</td>
+        <td>{{ data.password }}</td>
+        <td>{{ data.email }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
